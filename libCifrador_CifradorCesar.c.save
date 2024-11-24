@@ -1,0 +1,19 @@
+#include <jni.h>
+
+
+extern
+JNIEXPORT jstring JNICALL Java_libCifrador_CifradorCesar_cifrarCesar
+  (JNIEnv *, jobject, jstring, jint);
+
+/*
+ * Class:     libCifrador_CifradorCesar
+ * Method:    descifrarCesar
+ * Signature: (Ljava/lang/String;I)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_libCifrador_CifradorCesar_descifrarCesar
+  (JNIEnv *, jobject, jstring, jint);
+
+#ifdef __cplusplus
+}
+#endif
+#endif
